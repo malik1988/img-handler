@@ -1,3 +1,35 @@
+# 图片批量下载并合并成一个文件的工具
+
+用于批量下载多个图片并合并。
+
+## downloader
+
+文件下载器，使用当前目录下`download.txt`中的所有链接下载文件，并按照编号保存。为后按照顺序合并提供方便。最后还引用了文件合并的模块，对文件进行合并。
+
+```ini
+; download.txt 内容
+第一行为保存的文件夹名称
+http://xxxx.jpg
+http://xxxx.jpg
+http://xxxx.jpg
+http://xxxx.jpg
+
+```
+
+
+## aria2其实也可快速下载多个链接并重命名
+使用方式如下：
+`aria2c --input-file xxx.txt`
+
+```ini
+; txt 文件内容
+http://xxxx.jpg
+  out=aaa.jpg  
+http://xxxx.jpg
+  out=aaa.jpg  
+
+```
+
 # --- 一个图片拼接工具 ---    
 
 **本软件能将用户输入的多张图片进行拼接, 拼接后生成一张新图片**    
