@@ -5,3 +5,5 @@
 /*.spec
 .venv
 .vscode
+download/
+download*.txt
